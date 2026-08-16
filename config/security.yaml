@@ -1,0 +1,11 @@
+security:
+  enabled: true
+  policies:
+    - name: 'DefaultPolicy'
+      rules:
+        - name: 'NoSQLInjection'
+          description: 'Prevent NoSQL injection attacks'
+          enabled: true
+        - name: 'XSSProtection'
+          description: 'Enable Cross-Site Scripting protection'
+          enabled: true
